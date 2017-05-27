@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (4.4.0)
+  - HandyJSON (1.7.1)
+  - IQKeyboardManagerSwift (4.0.9)
+  - Kingfisher (3.9.1)
+  - SQLite.swift (0.11.2):
+    - SQLite.swift/standard (= 0.11.2)
+  - SQLite.swift/standard (0.11.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4.0)
+  - HandyJSON (~> 1.7.1)
+  - IQKeyboardManagerSwift (~> 4.0.9)
+  - Kingfisher (~> 3.9.1)
+  - SQLite.swift (~> 0.11.2)
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  HandyJSON: 54b6ce942795f7b2e61b82fe73cf25d9f139d125
+  IQKeyboardManagerSwift: 2eefe6c429b86aa08bfbc1b5c891164d754adf91
+  Kingfisher: 6729a0baaa458245bfb8cd5a1296c71c10d6eb6c
+  SQLite.swift: 670c3e9e0a806bbfd56a3de5d530768dc0e6fe7c
+
+PODFILE CHECKSUM: 72b1897255cc32b47c8b970cc45a5e2e06acb7ae
+
+COCOAPODS: 1.2.0
