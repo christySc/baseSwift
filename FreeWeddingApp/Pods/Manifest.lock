@@ -3,6 +3,7 @@ PODS:
   - HandyJSON (1.7.1)
   - IQKeyboardManagerSwift (4.0.9)
   - Kingfisher (3.9.1)
+  - SnapKit (3.2.0)
   - SQLite.swift (0.11.2):
     - SQLite.swift/standard (= 0.11.2)
   - SQLite.swift/standard (0.11.2)
@@ -12,6 +13,7 @@ DEPENDENCIES:
   - HandyJSON (~> 1.7.1)
   - IQKeyboardManagerSwift (~> 4.0.9)
   - Kingfisher (~> 3.9.1)
+  - SnapKit
   - SQLite.swift (~> 0.11.2)
 
 SPEC CHECKSUMS:
@@ -19,8 +21,9 @@ SPEC CHECKSUMS:
   HandyJSON: 54b6ce942795f7b2e61b82fe73cf25d9f139d125
   IQKeyboardManagerSwift: 2eefe6c429b86aa08bfbc1b5c891164d754adf91
   Kingfisher: 6729a0baaa458245bfb8cd5a1296c71c10d6eb6c
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SQLite.swift: 670c3e9e0a806bbfd56a3de5d530768dc0e6fe7c
 
-PODFILE CHECKSUM: 72b1897255cc32b47c8b970cc45a5e2e06acb7ae
+PODFILE CHECKSUM: d070b78f4dcbe0c88c5ac4524d5817d7ace16444
 
 COCOAPODS: 1.2.0

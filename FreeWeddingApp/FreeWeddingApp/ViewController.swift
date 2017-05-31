@@ -8,12 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource{
+var mytable = UITableView()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .Red_FE   
         // Do any additional setup after loading the view, typically from a nib.
+        self.addtableview()
+    }
+    
+    func addtableview(){
+        mytable.delegate = self
+        mytable.dataSource = self
+        mytable.snp.makeConstraints { (make) in
+            make.edges.equalTo(self.view)
+        }
+        self.view.addSubview(mytable)
     }
 
     override func didReceiveMemoryWarning() {

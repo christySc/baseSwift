@@ -8,6 +8,8 @@
 
 import UIKit
 
+import SnapKit
+
 //屏幕尺寸定义
 
 let kScreenBoundsSW = UIScreen.main.bounds
