@@ -28,7 +28,7 @@ let IOS_VERSION_MORE_THEN_10_SW : Bool = IOS_VERSION_INTGER_SW >= 10
 
 //log
 
-func NSLogSW<T>( message : T, file : String = #file, lineNumber : Int = #line) {
+func FWPrint<T>( message : T, file : String = #file, lineNumber : Int = #line) {
     #if DEBUG
         let fileName = (file as NSString).lastPathComponent
         print("\(fileName),line \(lineNumber):  \(message)")
@@ -36,6 +36,8 @@ func NSLogSW<T>( message : T, file : String = #file, lineNumber : Int = #line) {
 }
 
 //测试
+#if DEBUG
+#endif
 
 let TEST : Bool = true
 

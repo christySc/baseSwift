@@ -99,6 +99,7 @@
 		752633491ED95768001BF521 = {
 			isa = PBXGroup;
 			children = (
+				755D12251EDE97F200ED8210 /* FWLibrary */,
 				752633841ED95933001BF521 /* FWConfigure(配置) */,
 				752633831ED9590E001BF521 /* FWProject(业务) */,
 				752633541ED95768001BF521 /* FreeWeddingApp */,
@@ -166,6 +167,13 @@
 			);
 			name = "FWConfigure(配置)";
 			path = "FWProject(业务)/FWConfigure(配置)";
+			sourceTree = "<group>";
+		};
+		755D12251EDE97F200ED8210 /* FWLibrary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FWLibrary;
 			sourceTree = "<group>";
 		};
 		9919D6FFFE23FA414FC4CF04 /* Frameworks */ = {
