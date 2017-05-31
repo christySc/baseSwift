@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource{
+class ViewController: UIViewController {
 var mytable = UITableView()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,13 +18,18 @@ var mytable = UITableView()
     }
     
     func addtableview(){
-        mytable.delegate = self
-        mytable.dataSource = self
+//        mytable.delegate = self
+//        mytable.dataSource = self
         mytable.snp.makeConstraints { (make) in
             make.edges.equalTo(self.view)
         }
         self.view.addSubview(mytable)
     }
+    
+//    func tab
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
