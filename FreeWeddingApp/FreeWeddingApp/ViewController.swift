@@ -7,13 +7,18 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .Red_FE   
-        // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = .Red_FE
+        let test = FWCycleItemView(frame:self.view.bounds)
+        test.backgroundColor = .yellow
+        test.imgView.kf.setImage(with: URL.init(string: "https://i.dxlfile.com/hotel/large/2017-05/20170519171682933.jpg"), placeholder: UIImage.init(named: "小明.jpeg"), options: nil, progressBlock: nil, completionHandler: nil)
+        self.view.addSubview(test)
+        
     }
 
     override func didReceiveMemoryWarning() {
