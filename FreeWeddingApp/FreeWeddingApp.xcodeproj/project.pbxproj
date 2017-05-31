@@ -15,6 +15,7 @@
 		752633601ED95768001BF521 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7526335E1ED95768001BF521 /* LaunchScreen.storyboard */; };
 		7526336B1ED95768001BF521 /* FreeWeddingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526336A1ED95768001BF521 /* FreeWeddingAppTests.swift */; };
 		752633761ED95768001BF521 /* FreeWeddingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752633751ED95768001BF521 /* FreeWeddingAppUITests.swift */; };
+<<<<<<< HEAD
 		752633861ED95987001BF521 /* FWLibraryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752633851ED95987001BF521 /* FWLibraryHeader.swift */; };
 		752633871ED95987001BF521 /* FWLibraryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752633851ED95987001BF521 /* FWLibraryHeader.swift */; };
 		752633881ED95987001BF521 /* FWLibraryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752633851ED95987001BF521 /* FWLibraryHeader.swift */; };
@@ -28,6 +29,10 @@
 		75384C5D1EDEA54F009D9672 /* 小明.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75384C5C1EDEA54F009D9672 /* 小明.jpeg */; };
 		75384C5E1EDEA54F009D9672 /* 小明.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75384C5C1EDEA54F009D9672 /* 小明.jpeg */; };
 		75384C5F1EDEA54F009D9672 /* 小明.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 75384C5C1EDEA54F009D9672 /* 小明.jpeg */; };
+=======
+		B8BFBF7E1EDE9C1900CC0540 /* FWLibraryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BFBF7A1EDE9C1900CC0540 /* FWLibraryHeader.swift */; };
+		B8BFBF7F1EDE9C1900CC0540 /* FWUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BFBF7B1EDE9C1900CC0540 /* FWUtils.swift */; };
+>>>>>>> 696ea8ba4217989b883ccd9e609fd5614a4d7bb0
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,12 +67,17 @@
 		752633711ED95768001BF521 /* FreeWeddingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeWeddingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		752633751ED95768001BF521 /* FreeWeddingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeWeddingAppUITests.swift; sourceTree = "<group>"; };
 		752633771ED95768001BF521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		752633851ED95987001BF521 /* FWLibraryHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWLibraryHeader.swift; sourceTree = "<group>"; };
 		752633891ED959C4001BF521 /* FWUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWUtils.swift; sourceTree = "<group>"; };
 		75384C521EDE9BC2009D9672 /* FWBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWBannerView.swift; sourceTree = "<group>"; };
 		75384C541EDE9BE6009D9672 /* FWCycleItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWCycleItemView.swift; sourceTree = "<group>"; };
 		75384C5C1EDEA54F009D9672 /* 小明.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "小明.jpeg"; sourceTree = "<group>"; };
+=======
+>>>>>>> 696ea8ba4217989b883ccd9e609fd5614a4d7bb0
 		A1311B68A48D46CFB4BA9603 /* Pods-FreeWeddingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeWeddingApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreeWeddingApp/Pods-FreeWeddingApp.release.xcconfig"; sourceTree = "<group>"; };
+		B8BFBF7A1EDE9C1900CC0540 /* FWLibraryHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWLibraryHeader.swift; sourceTree = "<group>"; };
+		B8BFBF7B1EDE9C1900CC0540 /* FWUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWUtils.swift; sourceTree = "<group>"; };
 		C3CC23CD6FA1996CA64145E8 /* Pods_FreeWeddingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeWeddingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,9 +119,9 @@
 		752633491ED95768001BF521 = {
 			isa = PBXGroup;
 			children = (
-				755D12251EDE97F200ED8210 /* FWLibrary */,
-				752633841ED95933001BF521 /* FWConfigure(配置) */,
-				752633831ED9590E001BF521 /* FWProject(业务) */,
+				B8BFBF791EDE9C1900CC0540 /* FWConfigure（配置） */,
+				B8BFBF7C1EDE9C1900CC0540 /* FWLibrary（轮子） */,
+				B8BFBF7D1EDE9C1900CC0540 /* FWProject（业务） */,
 				752633541ED95768001BF521 /* FreeWeddingApp */,
 				752633691ED95768001BF521 /* FreeWeddingAppTests */,
 				752633741ED95768001BF521 /* FreeWeddingAppUITests */,
@@ -162,39 +172,41 @@
 			path = FreeWeddingAppUITests;
 			sourceTree = "<group>";
 		};
-		752633831ED9590E001BF521 /* FWProject(业务) */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "FWProject(业务)";
-			sourceTree = "<group>";
-		};
-		752633841ED95933001BF521 /* FWConfigure(配置) */ = {
-			isa = PBXGroup;
-			children = (
-				752633851ED95987001BF521 /* FWLibraryHeader.swift */,
-				752633891ED959C4001BF521 /* FWUtils.swift */,
-			);
-			name = "FWConfigure(配置)";
-			path = "FWProject(业务)/FWConfigure(配置)";
-			sourceTree = "<group>";
-		};
-		755D12251EDE97F200ED8210 /* FWLibrary */ = {
-			isa = PBXGroup;
-			children = (
-				75384C5C1EDEA54F009D9672 /* 小明.jpeg */,
-				75384C521EDE9BC2009D9672 /* FWBannerView.swift */,
-				75384C541EDE9BE6009D9672 /* FWCycleItemView.swift */,
-			);
-			path = FWLibrary;
-			sourceTree = "<group>";
-		};
 		9919D6FFFE23FA414FC4CF04 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				C3CC23CD6FA1996CA64145E8 /* Pods_FreeWeddingApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8BFBF791EDE9C1900CC0540 /* FWConfigure（配置） */ = {
+			isa = PBXGroup;
+			children = (
+				B8BFBF7A1EDE9C1900CC0540 /* FWLibraryHeader.swift */,
+				B8BFBF7B1EDE9C1900CC0540 /* FWUtils.swift */,
+			);
+			name = "FWConfigure（配置）";
+			path = FWAPP/FWConfigure;
+			sourceTree = "<group>";
+		};
+		B8BFBF7C1EDE9C1900CC0540 /* FWLibrary（轮子） */ = {
+			isa = PBXGroup;
+			children = (
+				75384C5C1EDEA54F009D9672 /* 小明.jpeg */,
+				75384C521EDE9BC2009D9672 /* FWBannerView.swift */,
+				75384C541EDE9BE6009D9672 /* FWCycleItemView.swift */,
+			);
+			name = "FWLibrary（轮子）";
+			path = FWAPP/FWLibrary;
+			sourceTree = "<group>";
+		};
+		B8BFBF7D1EDE9C1900CC0540 /* FWProject（业务） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "FWProject（业务）";
+			path = FWAPP/FWProject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,9 +403,14 @@
 				752633581ED95768001BF521 /* ViewController.swift in Sources */,
 				75384C531EDE9BC2009D9672 /* FWBannerView.swift in Sources */,
 				752633561ED95768001BF521 /* AppDelegate.swift in Sources */,
+<<<<<<< HEAD
 				75384C551EDE9BE6009D9672 /* FWCycleItemView.swift in Sources */,
 				7526338A1ED959C4001BF521 /* FWUtils.swift in Sources */,
 				752633861ED95987001BF521 /* FWLibraryHeader.swift in Sources */,
+=======
+				B8BFBF7F1EDE9C1900CC0540 /* FWUtils.swift in Sources */,
+				B8BFBF7E1EDE9C1900CC0540 /* FWLibraryHeader.swift in Sources */,
+>>>>>>> 696ea8ba4217989b883ccd9e609fd5614a4d7bb0
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,9 +419,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7526336B1ED95768001BF521 /* FreeWeddingAppTests.swift in Sources */,
+<<<<<<< HEAD
 				7526338B1ED959C4001BF521 /* FWUtils.swift in Sources */,
 				752633871ED95987001BF521 /* FWLibraryHeader.swift in Sources */,
 				75384C561EDE9BE6009D9672 /* FWCycleItemView.swift in Sources */,
+=======
+>>>>>>> 696ea8ba4217989b883ccd9e609fd5614a4d7bb0
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,9 +433,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				752633761ED95768001BF521 /* FreeWeddingAppUITests.swift in Sources */,
+<<<<<<< HEAD
 				7526338C1ED959C4001BF521 /* FWUtils.swift in Sources */,
 				752633881ED95987001BF521 /* FWLibraryHeader.swift in Sources */,
 				75384C571EDE9BE6009D9672 /* FWCycleItemView.swift in Sources */,
+=======
+>>>>>>> 696ea8ba4217989b883ccd9e609fd5614a4d7bb0
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
