@@ -1,0 +1,6 @@
+framework module Pods_FreeWeddingApp {
+  umbrella header "Pods-FreeWeddingApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
