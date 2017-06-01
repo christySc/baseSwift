@@ -9,18 +9,21 @@
 import UIKit
 import Kingfisher
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController ,FWBaseRequest {
+    
+    var requestModelType: FWRequestModel = .DefaultModel
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .Red_FE
-        let test = FWCycleItemView(frame:self.view.bounds)
-        test.backgroundColor = .yellow
-        test.imgView.kf.setImage(with: URL.init(string: "https://i.dxlfile.com/hotel/large/2017-05/20170519171682933.jpg"), placeholder: UIImage.init(named: "小明.jpeg"), options: nil, progressBlock: nil, completionHandler: nil)
-        self.view.addSubview(test)
+        doSth()
         
     }
-
+    func doSth() {
+        requestData(.GET,apiClient: .ApiHttpMWebURL, URLString: "MiYue", parameters: ["test":"dxl"],success: { (response) in
+            print(response!)
+        }) { (err) in
+            print(err)
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
