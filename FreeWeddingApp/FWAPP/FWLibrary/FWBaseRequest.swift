@@ -42,30 +42,16 @@ enum modelType {
     case defaultModel
 }
 
-class FWRequestModel {
-    
-}
 
-extension FWRequestModel {
-    open class var DefaultModel : FWRequestModel {
-        return chooseRight(ModelType: .defaultModel) as! FWRequestModel
-    }
-}
-
-private func chooseRight(ModelType : modelType) -> Any! {
-    switch ModelType {
-    case .defaultModel: return FWRequestBaseModel()
-    }
-}
 protocol FWBaseRequest {
     
-    var requestModelType : FWRequestModel{get}
+
 }
 
 extension FWBaseRequest {
     
     
-
+    
     ///
     /// - Parameters:
     ///   - type: get/post
@@ -74,7 +60,7 @@ extension FWBaseRequest {
     ///   - parameters: param
     ///   - success: 成功回调
     ///   - failture: 失败回调
-     func requestData(_ type : MethodType , apiClient : DXLApiClientType = .ApiBaseURL , URLString : String , parameters : [String : Any]? = nil,  success : @escaping (_ response : Any?)->(), failture : @escaping (_ error : Error)->()) {
+    func requestData(_ type : MethodType , apiClient : DXLApiClientType = .ApiBaseURL , URLString : String , parameters : [String : Any]? = nil,responseModelType : modelType = .defaultModel,  success : @escaping (_ response : Any?)->(), failture : @escaping (_ error : Error)->()) {
         let method = type == .GET ? HTTPMethod.get : HTTPMethod.post
         var tmpStr = URLString
         tmpStr = apiClient.rawValue.appending(tmpStr)
@@ -85,11 +71,31 @@ extension FWBaseRequest {
                 return
             }
             // 4.将结果回调出去
-            success(response.result.value)
+            if let json = response.result.value {
+                
+                print("\(json)\n =========================")
+                let strDic = json as? Dictionary<String , Any>
+             
+                if let model = chooseResponseModel(responseModelType, strDictionary: strDic)
+                {
+                   success(model)
+                }
+            }
+            
             }
         }
     }
+//mark: handyJSON解析
+private func chooseResponseModel(_ modelType : modelType , strDictionary : Dictionary<String, Any>?) -> Any? {
+    
+    guard strDictionary != nil else {return nil}
+    switch modelType {
+    case .defaultModel:
+        return JSONDeserializer<FWRequestBaseModel>.deserializeFrom(dict: (strDictionary! as NSDictionary))
+  
+    }
+}
 
 struct FWBaseRequestManager : FWBaseRequest {
-    var requestModelType : FWRequestModel
+
 }

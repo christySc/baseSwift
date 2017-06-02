@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import HandyJSON
 
 
-class FWRequestBaseModel : FWRequestModel{
+struct FWRequestBaseModel : HandyJSON{
     var code : Int?
     var msg : Any?
     var data : Any?

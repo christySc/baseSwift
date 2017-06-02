@@ -11,7 +11,7 @@ import Kingfisher
 
 class ViewController: UIViewController ,FWBaseRequest {
     
-    var requestModelType: FWRequestModel = .DefaultModel
+   // var requestModelType: String = FWRequestModel.DefaultModel
     override func viewDidLoad() {
         super.viewDidLoad()
         doSth()
