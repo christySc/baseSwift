@@ -15,8 +15,9 @@ enum MethodType {
     case POST
 }
 
+public let FWTEST : Bool = true
 
-#if TEST
+#if FWTEST
     enum DXLApiClientType : String {
         
         case ApiBaseURL     = "http://api.daoxila.com/"
@@ -38,6 +39,8 @@ enum MethodType {
 
 #endif
 
+//选择用什么model来接收数据
+
 enum modelType {
     case defaultModel
 }
@@ -45,6 +48,7 @@ enum modelType {
 
 protocol FWBaseRequest {
     
+    func requestData(_ type : MethodType , apiClient : DXLApiClientType, URLString : String , parameters : [String : Any]?,responseModelType : modelType,  success : @escaping (_ response : Any?)->(), failture : @escaping (_ error : Error)->())
 
 }
 
@@ -73,7 +77,6 @@ extension FWBaseRequest {
             // 4.将结果回调出去
             if let json = response.result.value {
                 
-                print("\(json)\n =========================")
                 let strDic = json as? Dictionary<String , Any>
              
                 if let model = chooseResponseModel(responseModelType, strDictionary: strDic)
@@ -99,3 +102,5 @@ private func chooseResponseModel(_ modelType : modelType , strDictionary : Dicti
 struct FWBaseRequestManager : FWBaseRequest {
 
 }
+
+

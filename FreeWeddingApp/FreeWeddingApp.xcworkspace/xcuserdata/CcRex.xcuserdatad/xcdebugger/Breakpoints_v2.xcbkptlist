@@ -4,38 +4,6 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FreeWeddingApp/ViewController.swift"
-            timestampString = "518006078.115653"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "doSth()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FreeWeddingApp/ViewController.swift"
-            timestampString = "518006079.132819"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "doSth()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "Yes"
@@ -43,6 +11,146 @@
             continueAfterRunningActions = "No"
             scope = "0"
             stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FWAPP/FWLibrary/FWBaseRequest.swift"
+            timestampString = "518069476.996556"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FreeWeddingApp.DXLApiClientType.init (rawValue : Swift.String) -&gt; Swift.Optional&lt;FreeWeddingApp.DXLApiClientType&gt;"
+                  moduleName = "FreeWeddingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/CcRex/Desktop/baseSwift1/FreeWeddingApp/FWAPP/FWLibrary/FWBaseRequest.swift"
+                  timestampString = "518200331.290863"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FreeWeddingApp.DXLApiClientType.rawValue.getter : Swift.String"
+                  moduleName = "FreeWeddingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/CcRex/Desktop/baseSwift1/FreeWeddingApp/FWAPP/FWLibrary/FWBaseRequest.swift"
+                  timestampString = "518200331.292984"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "69">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FWAPP/FWLibrary/FWBaseRequest.swift"
+            timestampString = "518069476.996556"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FreeWeddingApp.DXLApiClientType.init (rawValue : Swift.String) -&gt; Swift.Optional&lt;FreeWeddingApp.DXLApiClientType&gt;"
+                  moduleName = "FreeWeddingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/CcRex/Desktop/baseSwift1/FreeWeddingApp/FWAPP/FWLibrary/FWBaseRequest.swift"
+                  timestampString = "518200331.301733"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FreeWeddingApp.DXLApiClientType.rawValue.getter : Swift.String"
+                  moduleName = "FreeWeddingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/CcRex/Desktop/baseSwift1/FreeWeddingApp/FWAPP/FWLibrary/FWBaseRequest.swift"
+                  timestampString = "518200331.304343"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "69">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FWAPP/FWLibrary/FWBaseRequest.swift"
+            timestampString = "518069476.996556"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "DXLApiClientType"
+            landmarkType = "13">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FreeWeddingApp.DXLApiClientType.init (rawValue : Swift.String) -&gt; Swift.Optional&lt;FreeWeddingApp.DXLApiClientType&gt;"
+                  moduleName = "FreeWeddingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/CcRex/Desktop/baseSwift1/FreeWeddingApp/FWAPP/FWLibrary/FWBaseRequest.swift"
+                  timestampString = "518200331.309158"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FreeWeddingApp.DXLApiClientType.rawValue.getter : Swift.String"
+                  moduleName = "FreeWeddingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/CcRex/Desktop/baseSwift1/FreeWeddingApp/FWAPP/FWLibrary/FWBaseRequest.swift"
+                  timestampString = "518200331.310915"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "69">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

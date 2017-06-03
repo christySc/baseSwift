@@ -19,6 +19,12 @@
 		75384C6A1EDEB253009D9672 /* FWUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75384C631EDEB253009D9672 /* FWUtils.swift */; };
 		75384C6B1EDEB253009D9672 /* FWBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75384C651EDEB253009D9672 /* FWBannerView.swift */; };
 		75384C6C1EDEB253009D9672 /* FWCycleItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75384C661EDEB253009D9672 /* FWCycleItemView.swift */; };
+		756D0FD21EE3078800F9E3AE /* FWBottomDialogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756D0FD11EE3078800F9E3AE /* FWBottomDialogueView.swift */; };
+		756D0FD31EE3078800F9E3AE /* FWBottomDialogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756D0FD11EE3078800F9E3AE /* FWBottomDialogueView.swift */; };
+		756D0FD41EE3078800F9E3AE /* FWBottomDialogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756D0FD11EE3078800F9E3AE /* FWBottomDialogueView.swift */; };
+		756D0FD71EE31E1800F9E3AE /* FWBottomDialogueProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756D0FD61EE31E1800F9E3AE /* FWBottomDialogueProtocal.swift */; };
+		756D0FD81EE31E1800F9E3AE /* FWBottomDialogueProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756D0FD61EE31E1800F9E3AE /* FWBottomDialogueProtocal.swift */; };
+		756D0FD91EE31E1800F9E3AE /* FWBottomDialogueProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756D0FD61EE31E1800F9E3AE /* FWBottomDialogueProtocal.swift */; };
 		75F50E431EE011450091A86E /* FWBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F50E421EE011450091A86E /* FWBaseRequest.swift */; };
 		75F50E441EE011450091A86E /* FWBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F50E421EE011450091A86E /* FWBaseRequest.swift */; };
 		75F50E451EE011450091A86E /* FWBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F50E421EE011450091A86E /* FWBaseRequest.swift */; };
@@ -63,6 +69,8 @@
 		75384C631EDEB253009D9672 /* FWUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWUtils.swift; sourceTree = "<group>"; };
 		75384C651EDEB253009D9672 /* FWBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWBannerView.swift; sourceTree = "<group>"; };
 		75384C661EDEB253009D9672 /* FWCycleItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWCycleItemView.swift; sourceTree = "<group>"; };
+		756D0FD11EE3078800F9E3AE /* FWBottomDialogueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWBottomDialogueView.swift; sourceTree = "<group>"; };
+		756D0FD61EE31E1800F9E3AE /* FWBottomDialogueProtocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWBottomDialogueProtocal.swift; sourceTree = "<group>"; };
 		75F50E421EE011450091A86E /* FWBaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWBaseRequest.swift; sourceTree = "<group>"; };
 		75F50E461EE01A770091A86E /* FWBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWBaseModel.swift; sourceTree = "<group>"; };
 		A1311B68A48D46CFB4BA9603 /* Pods-FreeWeddingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeWeddingApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreeWeddingApp/Pods-FreeWeddingApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +169,7 @@
 		75384C601EDEB253009D9672 /* FWAPP */ = {
 			isa = PBXGroup;
 			children = (
+				756D0FD51EE309ED00F9E3AE /* FWProtocal */,
 				75384C611EDEB253009D9672 /* FWConfigure */,
 				75384C641EDEB253009D9672 /* FWLibrary */,
 				75384C681EDEB253009D9672 /* FWProject */,
@@ -184,6 +193,7 @@
 				75384C661EDEB253009D9672 /* FWCycleItemView.swift */,
 				75F50E421EE011450091A86E /* FWBaseRequest.swift */,
 				75F50E461EE01A770091A86E /* FWBaseModel.swift */,
+				756D0FD11EE3078800F9E3AE /* FWBottomDialogueView.swift */,
 			);
 			path = FWLibrary;
 			sourceTree = "<group>";
@@ -193,6 +203,14 @@
 			children = (
 			);
 			path = FWProject;
+			sourceTree = "<group>";
+		};
+		756D0FD51EE309ED00F9E3AE /* FWProtocal */ = {
+			isa = PBXGroup;
+			children = (
+				756D0FD61EE31E1800F9E3AE /* FWBottomDialogueProtocal.swift */,
+			);
+			path = FWProtocal;
 			sourceTree = "<group>";
 		};
 		9919D6FFFE23FA414FC4CF04 /* Frameworks */ = {
@@ -398,7 +416,9 @@
 				75384C6C1EDEB253009D9672 /* FWCycleItemView.swift in Sources */,
 				75F50E471EE01A770091A86E /* FWBaseModel.swift in Sources */,
 				75384C6A1EDEB253009D9672 /* FWUtils.swift in Sources */,
+				756D0FD71EE31E1800F9E3AE /* FWBottomDialogueProtocal.swift in Sources */,
 				75384C691EDEB253009D9672 /* FWLibraryHeader.swift in Sources */,
+				756D0FD21EE3078800F9E3AE /* FWBottomDialogueView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,7 +426,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				756D0FD31EE3078800F9E3AE /* FWBottomDialogueView.swift in Sources */,
 				75F50E481EE01A770091A86E /* FWBaseModel.swift in Sources */,
+				756D0FD81EE31E1800F9E3AE /* FWBottomDialogueProtocal.swift in Sources */,
 				7526336B1ED95768001BF521 /* FreeWeddingAppTests.swift in Sources */,
 				75F50E441EE011450091A86E /* FWBaseRequest.swift in Sources */,
 			);
@@ -416,7 +438,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				756D0FD41EE3078800F9E3AE /* FWBottomDialogueView.swift in Sources */,
 				75F50E491EE01A770091A86E /* FWBaseModel.swift in Sources */,
+				756D0FD91EE31E1800F9E3AE /* FWBottomDialogueProtocal.swift in Sources */,
 				752633761ED95768001BF521 /* FreeWeddingAppUITests.swift in Sources */,
 				75F50E451EE011450091A86E /* FWBaseRequest.swift in Sources */,
 			);

@@ -29,7 +29,7 @@ let IOS_VERSION_MORE_THEN_10_SW : Bool = IOS_VERSION_INTGER_SW >= 10
 
 //log
 
-public func FWPrint<T>( message : T, file : String = #file, lineNumber : Int = #line) {
+public func FWPrint<T>(_ message : T, file : String = #file, lineNumber : Int = #line) {
     #if DEBUG
         let fileName = (file as NSString).lastPathComponent
         print("\(fileName),line \(lineNumber):  \(message)")
@@ -40,7 +40,7 @@ public func FWPrint<T>( message : T, file : String = #file, lineNumber : Int = #
 #if DEBUG
 #endif
 
-let TEST : Bool = true
+
 
 
 

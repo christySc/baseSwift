@@ -9,13 +9,29 @@
 import UIKit
 import Kingfisher
 
-class ViewController: UIViewController ,FWBaseRequest {
+class ViewController: UIViewController ,FWBaseRequest , FWBottomDialogueDelegate {
     
+    var bt : UIButton!
    // var requestModelType: String = FWRequestModel.DefaultModel
     override func viewDidLoad() {
         super.viewDidLoad()
-        doSth()
+        self.view.backgroundColor = .white
+        bt = UIButton.init(frame: CGRect.init(x: 100, y: 50, width: 150, height:50))
+        bt.setTitleColor(.white, for: .normal)
+        bt.setTitle("点我", for: .normal)
+        self.view.addSubview(bt)
+        bt.backgroundColor = .black
+        bt.addTarget(self, action: #selector(go), for: .touchUpInside)
+
+       // doSth()
         
+    }
+    
+    func go() {
+        let sheet = FWBottomDialogueView.init(frame: CGRect(x: 0, y: UIScreen.main.bounds.size.height * 0.5, width: kScreenWidthSW, height: kScreenHeightSW * 0.5))
+        sheet.leftBtColor = .red
+        sheet.delegate = self
+        self.view.addSubview(sheet)
     }
     func doSth() {
         requestData(.GET,apiClient: .ApiHttpMWebURL, URLString: "MiYue", parameters: ["test":"dxl"],success: { (response) in
@@ -23,6 +39,12 @@ class ViewController: UIViewController ,FWBaseRequest {
         }) { (err) in
             print(err)
         }
+        
+        
+    }
+    
+    func gainPicker(string : String) {
+        bt.setTitle(string, for: .normal)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
