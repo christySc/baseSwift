@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 @objc protocol FWBottomDialogueProtocal {
-    var bkgView : UIView{get set}
+    var bkgView : UIView{get}
     func hiddenView()
     func showView(frame : CGRect)
     @objc optional func leftBtAction()

@@ -20,7 +20,7 @@ class ViewController: UIViewController ,FWBaseRequest , FWBottomDialogueDelegate
         bt.setTitleColor(.white, for: .normal)
         bt.setTitle("点我", for: .normal)
         self.view.addSubview(bt)
-        bt.backgroundColor = .black
+        bt.backgroundColor = UIColor(red: 1.6, green: 0.4, blue: 0.2, alpha: 1)
         bt.addTarget(self, action: #selector(go), for: .touchUpInside)
 
        // doSth()
@@ -28,10 +28,11 @@ class ViewController: UIViewController ,FWBaseRequest , FWBottomDialogueDelegate
     }
     
     func go() {
-        let sheet = FWBottomDialogueView.init(frame: CGRect(x: 0, y: UIScreen.main.bounds.size.height * 0.5, width: kScreenWidthSW, height: kScreenHeightSW * 0.5))
-        sheet.leftBtColor = .red
-        sheet.delegate = self
-        self.view.addSubview(sheet)
+//        let sheet = FWBottomDialogueView.init(frame: CGRect(x: 0, y: UIScreen.main.bounds.size.height * 0.7, width: kScreenWidthSW, height: kScreenHeightSW * 0.3))
+//        sheet.leftBtColor = .red
+//        sheet.delegate = self
+//        self.view.addSubview(sheet)
+        self.view.FW_makeToast(message: "这是测试长度!这是测试长度!这是测试长度!这是测试长度!这是测试长度!这是测试长度!这是测试长度!这是测试长度!这是测试长度!这是测试长度!")
     }
     func doSth() {
         requestData(.GET,apiClient: .ApiHttpMWebURL, URLString: "MiYue", parameters: ["test":"dxl"],success: { (response) in
