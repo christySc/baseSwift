@@ -32,7 +32,7 @@ class ViewController: UIViewController ,FWBaseRequest , FWBottomDialogueDelegate
 //        sheet.leftBtColor = .red
 //        sheet.delegate = self
 //        self.view.addSubview(sheet)
-        self.view.FW_makeToast(message: "这是测试长度!这是测试长度!这是测试长度!这是测试长度!这是测试长度!这是测试长度!这是测试长度!这是测试长度!这是测试长度!这是测试长度!")
+        self.view.FW_makeToast(message: "秀恩爱", image: UIImage(named: "testToast.jpg")!)
     }
     func doSth() {
         requestData(.GET,apiClient: .ApiHttpMWebURL, URLString: "MiYue", parameters: ["test":"dxl"],success: { (response) in
