@@ -10,7 +10,7 @@ import UIKit
 import Kingfisher
 
 class ViewController: UIViewController ,FWBaseRequest , FWBottomDialogueDelegate {
-    
+    var b = false
     var bt : UIButton!
    // var requestModelType: String = FWRequestModel.DefaultModel
     override func viewDidLoad() {
@@ -32,7 +32,15 @@ class ViewController: UIViewController ,FWBaseRequest , FWBottomDialogueDelegate
 //        sheet.leftBtColor = .red
 //        sheet.delegate = self
 //        self.view.addSubview(sheet)
-        self.view.FW_makeToast(message: "秀恩爱", image: UIImage(named: "testToast.jpg")!)
+//        self.view.FW_makeToast(message: "秀恩爱", image: UIImage(named: "testToast.jpg")!)
+        if b == false {
+           self.view.showLoading()
+            b = true
+        }else {
+            self.view.hiddenLoading()
+            b = false
+        }
+        
     }
     func doSth() {
         requestData(.GET,apiClient: .ApiHttpMWebURL, URLString: "MiYue", parameters: ["test":"dxl"],success: { (response) in

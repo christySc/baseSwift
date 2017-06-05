@@ -47,6 +47,8 @@ var FWErrorTimer: UnsafePointer<Timer>? = nil
 var FWErrorToastView: UnsafePointer<UIView>? = nil
 var FWErrorViewOriginBottomY: UnsafePointer<CGFloat>? = nil
 
+
+var activityIndicator : UnsafePointer<UIActivityIndicatorView>? = nil
 extension UIView {
     
     /**
@@ -96,6 +98,21 @@ extension UIView {
         self.addSubview(toast)
         objc_setAssociatedObject(self, &FWErrorToastView, toast, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
         FW_showErrorView(view: toast, duration: duration)
+    }
+    
+    func showLoading() {
+        let acc = UIActivityIndicatorView.init(activityIndicatorStyle: .gray)
+        acc.center = self.center
+        self.addSubview(acc)
+        acc.startAnimating()
+    }
+    
+    func hiddenLoading() {
+        for view in self.subviews {
+            if view .isKind(of: UIActivityIndicatorView.self) {
+                (view as! UIActivityIndicatorView).stopAnimating()
+            }
+        }
     }
     
     private func FW_toMakeToast(message: String?, duration: Double, image: UIImage?) {
